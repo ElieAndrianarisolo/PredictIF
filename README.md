@@ -1,52 +1,52 @@
 # PredictIF
 
-PREDICT’IF est une application qui permet à des clients de prendre des rendez-vous avec des médiums incarnés par des employés de l’entreprise. Cette application peut être exécutée par deux types d’utilisateurs : les employés et les clients.
+PREDICT'IF is an application that allows clients to schedule appointments with mediums embodied by company employees. This application can be used by two types of users: employees and clients.
 
-## Fonctionnalités
+## Features
 
-### Du point de vue client
+### From the client's perspective
 
-- **Création de compte** : Le client peut se créer un compte en renseignant :
-  - Nom
-  - Prénom
-  - Mail (servant d’identifiant)
-  - Numéro de téléphone
-  - Date de naissance (format yyyy-mm-dd)
-  - Mot de passe
-  - Genre (seulement 'H' pour homme et 'F' pour femme)
-  - Adresse postale
-  - **Condition** : Aucun autre compte ne doit exister avec la même adresse mail.
+- **Account Creation**: Clients can create an account by providing:
+  - First name
+  - Last name
+  - Email (used as the identifier)
+  - Phone number
+  - Date of birth (format: yyyy-mm-dd)
+  - Password
+  - Gender (only 'M' for male and 'F' for female)
+  - Postal address
+  - **Condition**: No other account should exist with the same email address.
 
-- **Authentification** : 
-  - Prérequis : Avoir déjà créé un compte.
-  - Identifiants : Mail et mot de passe.
+- **Authentication**: 
+  - Prerequisite: The client must have already created an account.
+  - Credentials: Email and password.
 
-- **Accès aux fonctionnalités** :
-  - **Profil astral** : Affichage du signe du zodiaque, de l’animal totem, de la couleur fétiche et du signe chinois.
-  - **Historique des consultations** : Consultation des précédents rendez-vous.
-  - **Demande de nouvelle consultation** :
-    - Affichage de la liste des médiums avec leurs informations (présentation, genre, support, formation, promotion).
-    - Entrée de l’ID du médium souhaité pour valider le rendez-vous.
-    - **Conditions** :
-      - Le choix de l’employé dépend du genre du médium demandé et du nombre de consultations déjà effectuées.
-      - Si aucun employé n’est disponible pour incarner le médium, la demande est refusée.
-  - **Déconnexion** : Le client peut quitter l’application à tout moment.
+- **Access to Features**:
+  - **Astrological Profile**: Displays the zodiac sign, totem animal, lucky color, and Chinese zodiac sign.
+  - **Consultation History**: View past appointments.
+  - **Request a New Consultation**:
+    - Displays a list of mediums with their information (bio, gender, medium type, training, promotion).
+    - Enter the ID of the chosen medium to confirm the appointment.
+    - **Conditions**:
+      - The choice of employee depends on the requested medium's gender and the number of consultations already performed.
+      - If no employee is available to embody the medium, the request is rejected.
+  - **Logout**: The client can exit the application at any time.
 
-### Du point de vue Employé
+### From the employee's perspective
 
-- **Authentification** : 
-  - Les employés sont déjà enregistrés dans la base de données.
-  - Identifiants : Mail et mot de passe (même méthode que pour les clients).
+- **Authentication**: 
+  - Employees are already registered in the database.
+  - Credentials: Email and password (same method as for clients).
 
-- **Accès aux fonctionnalités** :
-  - **Consultation des clients** : Voir tous les clients dans la base de données et obtenir le détail de leurs informations (profil astral, historique) en entrant leur ID.
-  - **Statistiques** :
-    - TOP 5 des médiums générant le plus de consultations.
-    - Répartition des consultations par employé.
-    - Répartition des consultations par médiums.
-  - **Lancement de consultations** :
-    - Conditions : La consultation doit lui être attribuée (choisie par un client) et être en cours (aucun commentaire encore ajouté).
-    - **Prédictions automatiques** : Générer des prédictions pour le client dans les catégories amour, santé et travail (avec une note entre 1 et 4).
-    - **Fin de consultation** : Ajout d’un commentaire.
-    - **Historique** : Consultation de l’historique des consultations réalisées, y compris la consultation en cours.
-  - **Déconnexion** : L’employé peut quitter l’application à tout moment.
+- **Access to Features**:
+  - **Client Consultation**: View all clients in the database and access their information (astrological profile, history) by entering their ID.
+  - **Statistics**:
+    - TOP 5 mediums generating the most consultations.
+    - Consultation distribution by employee.
+    - Consultation distribution by medium.
+  - **Start Consultations**:
+    - Conditions: The consultation must be assigned to them (chosen by a client) and in progress (no comments have been added yet).
+    - **Automatic Predictions**: Generate predictions for the client in the areas of love, health, and work (with a score from 1 to 4).
+    - **End Consultation**: Add a comment.
+    - **History**: View the history of completed consultations, including the current consultation.
+  - **Logout**: The employee can exit the application at any time.
